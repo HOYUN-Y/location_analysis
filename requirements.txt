@@ -1,3 +1,11 @@
 requests>=2.31.0
 python-dotenv>=1.0.0
 pandas>=2.0.0
+
+# 지도 표기
+matplotlib>=3.7.0
+folium>=0.15.0
+
+# 공간 연산 (vworld_parcel_analysis.ipynb)
+shapely>=2.0.0
+pyproj>=3.5.0
