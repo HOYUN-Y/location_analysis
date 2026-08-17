@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_ddbb796aa63b317f4ca46ce65d627e46 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_ddbb796aa63b317f4ca46ce65d627e46" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_ddbb796aa63b317f4ca46ce65d627e46 = L.map(
+                "map_ddbb796aa63b317f4ca46ce65d627e46",
+                {
+                    center: [37.4730228142566, 127.141833565207],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 15,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_40169b02c0a65bde7518f5ce01a42202 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_40169b02c0a65bde7518f5ce01a42202.addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+        function geo_json_b8a69a0d19a4d23223558cadecef6b0b_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#111", "fillColor": "#111", "fillOpacity": 0.35, "weight": 3};
+            }
+        }
+
+        function geo_json_b8a69a0d19a4d23223558cadecef6b0b_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_b8a69a0d19a4d23223558cadecef6b0b = L.geoJson(null, {
+                onEachFeature: geo_json_b8a69a0d19a4d23223558cadecef6b0b_onEachFeature,
+            
+                style: geo_json_b8a69a0d19a4d23223558cadecef6b0b_styler,
+            ...{
+}
+        });
+
+        function geo_json_b8a69a0d19a4d23223558cadecef6b0b_add (data) {
+            geo_json_b8a69a0d19a4d23223558cadecef6b0b
+                .addData(data);
+        }
+            geo_json_b8a69a0d19a4d23223558cadecef6b0b_add({"features": [{"geometry": {"coordinates": [[[[127.14154987304678, 37.472058311770375], [127.14167062233794, 37.474004153247435], [127.142122108569, 37.473986407756726], [127.1420011215134, 37.47204056702736], [127.14154987304678, 37.472058311770375]]]], "type": "MultiPolygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_b8a69a0d19a4d23223558cadecef6b0b.addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            var marker_801bac862117f471e02d38628f8a2f46 = L.marker(
+                [37.4730228142566, 127.141833565207],
+                {
+}
+            ).addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            var icon_6ce169f55baddcd31fb12e3db03e423c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "black",
+  "iconColor": "white",
+  "icon": "star",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_801bac862117f471e02d38628f8a2f46.bindTooltip(
+                `<div>
+                     위례중앙역(가정)
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_801bac862117f471e02d38628f8a2f46.setIcon(icon_6ce169f55baddcd31fb12e3db03e423c);
+            
+    
+        function geo_json_b26b0f945ffa558e1987c95e99265ec6_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#d62728", "fillColor": "#d62728", "fillOpacity": 0.18, "weight": 2};
+            }
+        }
+
+        function geo_json_b26b0f945ffa558e1987c95e99265ec6_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_b26b0f945ffa558e1987c95e99265ec6 = L.geoJson(null, {
+                onEachFeature: geo_json_b26b0f945ffa558e1987c95e99265ec6_onEachFeature,
+            
+                style: geo_json_b26b0f945ffa558e1987c95e99265ec6_styler,
+            ...{
+}
+        });
+
+        function geo_json_b26b0f945ffa558e1987c95e99265ec6_add (data) {
+            geo_json_b26b0f945ffa558e1987c95e99265ec6
+                .addData(data);
+        }
+            geo_json_b26b0f945ffa558e1987c95e99265ec6_add({"features": [{"geometry": {"coordinates": [[[[127.13919215445993, 37.4800346327281], [127.13923931353287, 37.480103684561875], [127.13965400128625, 37.48071173665442], [127.13969549529997, 37.48077376711181], [127.13973552093667, 37.48083652007243], [127.13977419075529, 37.480899725105665], [127.13981150491928, 37.48096347231284], [127.13984723730641, 37.481027761959886], [127.13988172709301, 37.481092593651056], [127.13991463476441, 37.48115778758489], [127.13994607370938, 37.481223523830074], [127.1399760437586, 37.481289712287854], [127.14000465780259, 37.48135626272691], [127.14020986961641, 37.48184941014408], [127.14149721950548, 37.481928441545904], [127.14179737541164, 37.48191664286658], [127.14177837435687, 37.48161059541994], [127.1416745109692, 37.47993683892142], [127.13919215445993, 37.4800346327281]]]], "type": "MultiPolygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_b26b0f945ffa558e1987c95e99265ec6.bindTooltip(
+                `<div>
+                     위례송파푸르지오 — 경계→역 768m · 지수 62.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            geo_json_b26b0f945ffa558e1987c95e99265ec6.addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            var poly_line_2b2f6a87e84b61b1641fb116ea556b40 = L.polyline(
+                [[37.479936838921425, 127.1416745109692], [37.4730228142566, 127.141833565207]],
+                {"bubblingMouseEvents": true, "color": "#d62728", "dashArray": "6", "dashOffset": null, "fill": false, "fillColor": "#d62728", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            poly_line_2b2f6a87e84b61b1641fb116ea556b40.bindTooltip(
+                `<div>
+                     위례송파푸르지오 — 경계→역 768m · 지수 62.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        function geo_json_d82d95b2b1ead30230329dcf6ab876f3_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#1f77b4", "fillColor": "#1f77b4", "fillOpacity": 0.18, "weight": 2};
+            }
+        }
+
+        function geo_json_d82d95b2b1ead30230329dcf6ab876f3_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_d82d95b2b1ead30230329dcf6ab876f3 = L.geoJson(null, {
+                onEachFeature: geo_json_d82d95b2b1ead30230329dcf6ab876f3_onEachFeature,
+            
+                style: geo_json_d82d95b2b1ead30230329dcf6ab876f3_styler,
+            ...{
+}
+        });
+
+        function geo_json_d82d95b2b1ead30230329dcf6ab876f3_add (data) {
+            geo_json_d82d95b2b1ead30230329dcf6ab876f3
+                .addData(data);
+        }
+            geo_json_d82d95b2b1ead30230329dcf6ab876f3_add({"features": [{"geometry": {"coordinates": [[[[127.14098482234638, 37.47438307017136], [127.1410124440085, 37.47482903355753], [127.1410533507024, 37.47494116000388], [127.14107048393267, 37.47521801766312], [127.14115425449958, 37.475278556128984], [127.14213015485844, 37.475240097398654], [127.14207431783943, 37.47434006286972], [127.14098482234638, 37.47438307017136]]]], "type": "MultiPolygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_d82d95b2b1ead30230329dcf6ab876f3.bindTooltip(
+                `<div>
+                     위례중앙푸르지오 — 경계→역 147m · 지수 97.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            geo_json_d82d95b2b1ead30230329dcf6ab876f3.addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            var poly_line_60b63ded81631a5af06fb0e96e7a4e09 = L.polyline(
+                [[37.474346320128966, 127.14191581982071], [37.4730228142566, 127.141833565207]],
+                {"bubblingMouseEvents": true, "color": "#1f77b4", "dashArray": "6", "dashOffset": null, "fill": false, "fillColor": "#1f77b4", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            poly_line_60b63ded81631a5af06fb0e96e7a4e09.bindTooltip(
+                `<div>
+                     위례중앙푸르지오 — 경계→역 147m · 지수 97.9
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        function geo_json_9531b6bb97d43051ac93ddff929589c8_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#2ca02c", "fillColor": "#2ca02c", "fillOpacity": 0.18, "weight": 2};
+            }
+        }
+
+        function geo_json_9531b6bb97d43051ac93ddff929589c8_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_9531b6bb97d43051ac93ddff929589c8 = L.geoJson(null, {
+                onEachFeature: geo_json_9531b6bb97d43051ac93ddff929589c8_onEachFeature,
+            
+                style: geo_json_9531b6bb97d43051ac93ddff929589c8_styler,
+            ...{
+}
+        });
+
+        function geo_json_9531b6bb97d43051ac93ddff929589c8_add (data) {
+            geo_json_9531b6bb97d43051ac93ddff929589c8
+                .addData(data);
+        }
+            geo_json_9531b6bb97d43051ac93ddff929589c8_add({"features": [{"geometry": {"coordinates": [[[[127.14300741615772, 37.46991741535033], [127.14306164311704, 37.470798801285795], [127.14397497414066, 37.470762204273214], [127.1440681146012, 37.47075785724159], [127.14425383574988, 37.47075204684239], [127.14449607093947, 37.47074193307473], [127.14456061320608, 37.470738701456426], [127.14462492697388, 37.47073420867599], [127.14468912511208, 37.47072836449683], [127.14475309474481, 37.47072125915616], [127.14481694891332, 37.47071289251732], [127.14488034848164, 37.47070326499189], [127.14494351953522, 37.47069237630621], [127.14500634902683, 37.470680226597906], [127.14506872390925, 37.470666816004865], [127.14513064417963, 37.47065214452779], [127.1451921100076, 37.47063630226741], [127.14525300817388, 37.47061919926188], [127.14531345171999, 37.47060083537463], [127.14576716306854, 37.470457923998865], [127.14588109832943, 37.47039228197632], [127.14608535785595, 37.47032788088126], [127.14604248720671, 37.47025513230929], [127.14599860029047, 37.47018292556495], [127.14595324510925, 37.47011135129976], [127.14590642166615, 37.47004040951211], [127.14585824283398, 37.46997000996212], [127.14580859557249, 37.469900152786195], [127.14575759327379, 37.469831018044616], [127.14570523576714, 37.469762515635544], [127.1456515232279, 37.46969473565733], [127.1455963424426, 37.46962758814586], [127.14539160378648, 37.469382224245145], [127.14465886448419, 37.46938329428039], [127.14300741615772, 37.46991741535033]]]], "type": "MultiPolygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_9531b6bb97d43051ac93ddff929589c8.bindTooltip(
+                `<div>
+                     래미안위례 — 경계→역 270m · 지수 93.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            geo_json_9531b6bb97d43051ac93ddff929589c8.addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            var poly_line_1cab01cd0188dcbc925968cb02ba0066 = L.polyline(
+                [[37.470798801285795, 127.14306164311704], [37.4730228142566, 127.141833565207]],
+                {"bubblingMouseEvents": true, "color": "#2ca02c", "dashArray": "6", "dashOffset": null, "fill": false, "fillColor": "#2ca02c", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            poly_line_1cab01cd0188dcbc925968cb02ba0066.bindTooltip(
+                `<div>
+                     래미안위례 — 경계→역 270m · 지수 93.2
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+        function geo_json_628b6fdd038389e821d1c7aaafaca3bb_styler(feature) {
+            switch(feature.id) {
+                default:
+                    return {"color": "#9467bd", "fillColor": "#9467bd", "fillOpacity": 0.18, "weight": 2};
+            }
+        }
+
+        function geo_json_628b6fdd038389e821d1c7aaafaca3bb_onEachFeature(feature, layer) {
+
+            layer.on({
+            });
+        };
+        var geo_json_628b6fdd038389e821d1c7aaafaca3bb = L.geoJson(null, {
+                onEachFeature: geo_json_628b6fdd038389e821d1c7aaafaca3bb_onEachFeature,
+            
+                style: geo_json_628b6fdd038389e821d1c7aaafaca3bb_styler,
+            ...{
+}
+        });
+
+        function geo_json_628b6fdd038389e821d1c7aaafaca3bb_add (data) {
+            geo_json_628b6fdd038389e821d1c7aaafaca3bb
+                .addData(data);
+        }
+            geo_json_628b6fdd038389e821d1c7aaafaca3bb_add({"features": [{"geometry": {"coordinates": [[[[127.1502687979485, 37.47396280121209], [127.14956218246718, 37.47399125926166], [127.1481334608792, 37.47404755120523], [127.14798927353752, 37.47408025619029], [127.14758843060868, 37.4740960694013], [127.14772031218497, 37.47621920725931], [127.14899194427, 37.47616906306513], [127.14905863899664, 37.47616582630288], [127.14912510477743, 37.476161148186286], [127.14919145501558, 37.47615520877434], [127.1492575763006, 37.476147828008685], [127.14932346898368, 37.47613918608969], [127.14938913270656, 37.47612910281774], [127.14945434153846, 37.476117668576286], [127.1495192088837, 37.476105063424384], [127.14958362133164, 37.47609110730432], [127.1496475788791, 37.47607580021685], [127.14971108170073, 37.4760592322627], [127.14977390368928, 37.47604140372621], [127.14983627094644, 37.47602231432471], [127.14989795736503, 37.47600196434282], [127.14995896294258, 37.475980353781594], [127.15001928785483, 37.47595757274201], [127.15007881886925, 37.47593353126734], [127.15013766903557, 37.47590822921655], [127.15019561260453, 37.475881847075016], [127.1502526492176, 37.47585420464414], [127.1503088922819, 37.47582548198283], [127.15036411569224, 37.47579567937696], [127.15041843214183, 37.47576461648566], [127.15057064918592, 37.47567540560695], [127.15056678878938, 37.47566703116018], [127.150555546223, 37.47564163709144], [127.15054464085114, 37.47561525149431], [127.15053441325948, 37.47558859474081], [127.15052486380524, 37.47556184703096], [127.1505159923089, 37.475534918265026], [127.15050791199991, 37.475507898400544], [127.15050039659596, 37.47548069762281], [127.15049367237796, 37.47545340574676], [127.15048773934512, 37.475426022772645], [127.15048157753183, 37.475397288583814], [127.15047609099071, 37.475367021840235], [127.15047139581212, 37.47533675409869], [127.15046749163751, 37.47530630515936], [127.15046449169586, 37.475275764979834], [127.1504623963436, 37.47524531376001], [127.15040447270265, 37.47431257951216], [127.15036356097234, 37.47420478111817], [127.15035268737893, 37.4740232429151], [127.1502687979485, 37.47396280121209]]]], "type": "MultiPolygon"}, "id": "0", "type": "Feature"}], "type": "FeatureCollection"});
+
+        
+    
+            geo_json_628b6fdd038389e821d1c7aaafaca3bb.bindTooltip(
+                `<div>
+                     플로리체 위례 — 경계→역 523m · 지수 78.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            geo_json_628b6fdd038389e821d1c7aaafaca3bb.addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            var poly_line_7051c98ef40b1305822d367416c5d4b0 = L.polyline(
+                [[37.4740960694013, 127.14758843060869], [37.4730228142566, 127.141833565207]],
+                {"bubblingMouseEvents": true, "color": "#9467bd", "dashArray": "6", "dashOffset": null, "fill": false, "fillColor": "#9467bd", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "noClip": false, "opacity": 0.8, "smoothFactor": 1.0, "stroke": true, "weight": 2.5}
+            ).addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+        
+    
+            poly_line_7051c98ef40b1305822d367416c5d4b0.bindTooltip(
+                `<div>
+                     플로리체 위례 — 경계→역 523m · 지수 78.5
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var layer_control_9de953dd47a628c35144845067ff3664_layers = {
+                base_layers : {
+                    "cartodbpositron" : tile_layer_40169b02c0a65bde7518f5ce01a42202,
+                },
+                overlays :  {
+                    "\uc704\ub840\uc911\uc559\uc5ed(\uac00\uc815)" : geo_json_b8a69a0d19a4d23223558cadecef6b0b,
+                    "\uc704\ub840\uc1a1\ud30c\ud478\ub974\uc9c0\uc624" : geo_json_b26b0f945ffa558e1987c95e99265ec6,
+                    "\uc704\ub840\uc911\uc559\ud478\ub974\uc9c0\uc624" : geo_json_d82d95b2b1ead30230329dcf6ab876f3,
+                    "\ub798\ubbf8\uc548\uc704\ub840" : geo_json_9531b6bb97d43051ac93ddff929589c8,
+                    "\ud50c\ub85c\ub9ac\uccb4 \uc704\ub840" : geo_json_628b6fdd038389e821d1c7aaafaca3bb,
+                },
+            };
+            let layer_control_9de953dd47a628c35144845067ff3664 = L.control.layers(
+                layer_control_9de953dd47a628c35144845067ff3664_layers.base_layers,
+                layer_control_9de953dd47a628c35144845067ff3664_layers.overlays,
+                {
+  "position": "topright",
+  "collapsed": true,
+  "autoZIndex": true,
+}
+            ).addTo(map_ddbb796aa63b317f4ca46ce65d627e46);
+
+        
+</script>
+</html>
